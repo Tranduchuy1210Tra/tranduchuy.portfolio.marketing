@@ -1,399 +1,300 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
-  <meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Tran Duc Huy — Digital Marketing Executive | Portfolio</title>
-  <meta name="description" content="Portfolio of Tran Duc Huy — Data-driven Digital Marketer. 15+ brands helped, 587% viewer growth, 310K+ reach across Telecom, F&B, and EdTech."/>
-  <meta property="og:title" content="Tran Duc Huy — Digital Marketing Executive"/>
-  <meta property="og:description" content="Data-driven Digital Marketer. 15+ brands, 587% viewer growth, 310K+ reach."/>
-  <meta property="og:type" content="website"/>
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%232234F5'/%3E%3Ctext x='50%25' y='55%25' dominant-baseline='middle' text-anchor='middle' fill='white' font-family='Arial' font-weight='bold' font-size='16'%3EH%3C/text%3E%3C/svg%3E"/>
-  <link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-  <script src="https://unpkg.com/@phosphor-icons/web"></script>
-  <link rel="stylesheet" href="styles.css?v=5"/>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trần Đức Huy — Marketing Planner</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23076653'/%3E%3Ctext x='50%25' y='55%25' dominant-baseline='middle' text-anchor='middle' fill='%23E3EF26' font-family='Arial' font-weight='bold' font-size='16'%3EH%3C/text%3E%3C/svg%3E"/>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css?v=7">
 </head>
 <body>
 
-<!-- SCROLL PROGRESS -->
-<div class="scroll-progress" id="scrollProgress"></div>
+<!-- Custom Cursor -->
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
 
 <!-- NAV -->
-<nav class="nav" id="navbar">
-  <div class="container nav__inner">
-    <a href="#hero" class="nav__logo"><span class="nav__mark">H</span>TRAN DUC HUY</a>
-    <div class="nav__links" id="navLinks">
-      <a href="#about" class="nav__link" data-nav>About</a>
-      <a href="#experience" class="nav__link" data-nav>Experience</a>
-      <a href="#projects" class="nav__link" data-nav>Projects</a>
-      <a href="#skills" class="nav__link" data-nav>Skills</a>
-      <a href="#certifications" class="nav__link" data-nav>Certifications</a>
-      <a href="#contact" class="nav__cta">Let's Talk →</a>
-    </div>
-    <button class="nav__hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+<nav>
+  <div class="nav-logo">Huy Tran.</div>
+  <div class="nav-links">
+    <a href="#about">Sở Trường</a>
+    <a href="#experience">Kinh Nghiệm</a>
+    <a href="#work">Dự Án</a>
+    <a href="#contact" class="nav-cta">Liên Hệ →</a>
   </div>
 </nav>
 
 <!-- HERO -->
-<section class="hero section" id="hero">
-  <canvas id="particle-canvas"></canvas>
-  <div class="hero__glow hero__glow--1"></div>
-  <div class="hero__glow hero__glow--2"></div>
-  <div class="floating-shapes">
-    <div class="floating-shape"></div>
-    <div class="floating-shape"></div>
-    <div class="floating-shape"></div>
-  </div>
-  <div class="container hero__inner">
-    <div class="hero__text">
-      <p class="hero__greeting">Hello there <span class="wave">👋</span></p>
-      <h1 class="display-title">I'm<br><span class="display-italic">Tran Duc Huy.</span></h1>
-      <p class="hero__role" style="margin-top: 15px;">Digital Marketing Executive — <span class="typing" id="typingText"></span></p>
-      <p class="hero__bio">Data-driven Digital Marketer with a strong IT foundation. 2+ years blending creativity and analytical thinking across SEO, performance marketing, social media, and brand operations in EdTech, Telecom, and F&B.</p>
-      <div class="hero__tags">
-        <span class="hero__tag">#GrowthMarketing</span><span class="hero__tag">#BrandStrategy</span>
-        <span class="hero__tag">#MarTech</span><span class="hero__tag">#SEO</span>
-        <span class="hero__tag">#SocialMedia</span><span class="hero__tag">#DataDriven</span>
-      </div>
-      <div class="hero__btns">
-        <a href="#projects" class="btn btn--primary magnetic-btn">View My Work <span class="btn__arrow">→</span></a>
-        <a href="#contact" class="btn btn--outline magnetic-btn">Contact Me</a>
-        <a href="TranDucHuy_CV_Marketing_Executive_EN.pdf" target="_blank" class="btn btn--cv magnetic-btn">📄 Download CV</a>
-      </div>
-      <div class="hero__stats">
-        <div class="hero__stat tilt-card"><div class="hero__stat-num" data-count="15">0</div><div class="hero__stat-lbl">Brands Helped</div></div>
-        <div class="hero__stat tilt-card"><div class="hero__stat-num" data-count="2">0</div><div class="hero__stat-lbl">Years Exp.</div></div>
-        <div class="hero__stat tilt-card"><div class="hero__stat-num" data-count="10">0</div><div class="hero__stat-lbl">Projects</div></div>
-      </div>
+<section class="hero" id="home">
+  <canvas id="bg-canvas"></canvas>
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+  <div class="orb orb-3"></div>
+
+  <div class="hero-content">
+    <div class="hero-tag">✦ Marketing Planner & Strategist</div>
+    <h1 class="hero-title">
+      <span class="line-1">Chiến Lược<br>Dữ Liệu</span>
+      <span class="line-2">Sáng tạo đột phá</span>
+    </h1>
+    <p class="hero-desc">Tôi là Trần Đức Huy. Nền tảng IT kết hợp tư duy Marketing giúp tôi tạo ra những chiến dịch tối ưu ROI, thúc đẩy tăng trưởng bằng dữ liệu thực tế thay vì cảm tính.</p>
+    <div class="hero-actions">
+      <a href="#work" class="btn-primary">Xem Portfolio →</a>
+      <a href="#contact" class="btn-ghost">
+        <div class="arrow">↗</div>
+        Kết nối ngay
+      </a>
     </div>
-    <div class="hero__visual">
-      <div class="hero__img-wrap tilt-card">
-        <div class="hero__img-frame"><img src="assets/profile/profile.png" alt="Tran Duc Huy"/></div>
-        <div class="hero__img-deco"></div>
-        <div class="hero__badge hero__badge--1"><div class="hero__badge-icon">📊</div><div class="hero__badge-title">Data-Driven</div><div class="hero__badge-sub">Analytics Expert</div></div>
-        <div class="hero__badge hero__badge--2"><div class="hero__badge-icon">🚀</div><div class="hero__badge-title">Growth Marketer</div><div class="hero__badge-sub">Proven Results</div></div>
+  </div>
+
+  <!-- Floating 3D Card -->
+  <div class="hero-visual">
+    <div class="hero-card-3d">
+      <div class="card-face">
+        <div class="card-number">01</div>
+        <div class="card-metric">
+          <div class="label">Kaiserin Restaurant</div>
+          <div class="value">+587%</div>
+          <div class="sub">Tăng trưởng lượng người xem (Unique Viewers)</div>
+        </div>
+        <svg style="position:absolute;bottom:90px;left:0;right:0;width:100%;height:80px" viewBox="0 0 340 80">
+          <defs>
+            <linearGradient id="sg" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" style="stop-color:#076653;stop-opacity:0.3"/>
+              <stop offset="100%" style="stop-color:#E3EF26;stop-opacity:0.6"/>
+            </linearGradient>
+          </defs>
+          <polyline points="0,60 40,50 80,55 120,30 160,35 200,20 240,15 280,10 320,5 340,2"
+            fill="none" stroke="url(#sg)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <polygon points="0,60 40,50 80,55 120,30 160,35 200,20 240,15 280,10 320,5 340,2 340,80 0,80"
+            fill="url(#sg)" opacity="0.25"/>
+        </svg>
       </div>
     </div>
   </div>
 </section>
+
+<!-- STATS BAR -->
+<div class="stats-bar">
+  <div class="stat-item reveal">
+    <span class="stat-num" data-target="3">0</span>
+    <span class="stat-label">Năm Kinh Nghiệm</span>
+  </div>
+  <div class="stat-item reveal reveal-delay-1">
+    <span class="stat-num" data-target="10">0</span>
+    <span class="stat-label">Chứng chỉ chuyên môn (Meta, Google, IBM)</span>
+  </div>
+  <div class="stat-item reveal reveal-delay-2">
+    <span class="stat-num" data-target="6">0</span>
+    <span class="stat-label">Dự Án Thành Công</span>
+  </div>
+  <div class="stat-item reveal reveal-delay-3">
+    <span class="stat-num" data-target="100" data-suffix="%">0</span>
+    <span class="stat-label">KPI Fulfillment</span>
+  </div>
+</div>
 
 <!-- MARQUEE -->
-<div class="marquee"><div class="marquee__track">
-  <span class="marquee__item">✦ 587% Viewer Growth</span><span class="marquee__item">✦ 310.7K Total Reach</span><span class="marquee__item">✦ 416.7% Link Clicks</span><span class="marquee__item">✦ 8.5% Conversion Rate</span><span class="marquee__item">✦ 30% CAC Reduction</span><span class="marquee__item">✦ 100% KPI Fulfillment</span><span class="marquee__item">✦ 1,200+ Bookings</span><span class="marquee__item">✦ 15+ Brands</span>
-  <span class="marquee__item">✦ 587% Viewer Growth</span><span class="marquee__item">✦ 310.7K Total Reach</span><span class="marquee__item">✦ 416.7% Link Clicks</span><span class="marquee__item">✦ 8.5% Conversion Rate</span><span class="marquee__item">✦ 30% CAC Reduction</span><span class="marquee__item">✦ 100% KPI Fulfillment</span><span class="marquee__item">✦ 1,200+ Bookings</span><span class="marquee__item">✦ 15+ Brands</span>
-</div></div>
+<div class="marquee-section">
+  <div class="marquee-track">
+    <span class="marquee-item">PMEDIA</span>
+    <span class="marquee-item">✦</span>
+    <span class="marquee-item">Viettel HCM</span>
+    <span class="marquee-item">✦</span>
+    <span class="marquee-item">Kaiserin</span>
+    <span class="marquee-item">✦</span>
+    <span class="marquee-item">Lac Hong University</span>
+    <span class="marquee-item">✦</span>
+    <span class="marquee-item">Quoc Bao Construction</span>
+    <span class="marquee-item">✦</span>
+    <span class="marquee-item">PMEDIA</span>
+    <span class="marquee-item">✦</span>
+    <span class="marquee-item">Viettel HCM</span>
+    <span class="marquee-item">✦</span>
+    <span class="marquee-item">Kaiserin</span>
+    <span class="marquee-item">✦</span>
+    <span class="marquee-item">Lac Hong University</span>
+    <span class="marquee-item">✦</span>
+    <span class="marquee-item">Quoc Bao Construction</span>
+    <span class="marquee-item">✦</span>
+    <span class="marquee-item">PMEDIA</span>
+    <span class="marquee-item">✦</span>
+    <span class="marquee-item">Viettel HCM</span>
+    <span class="marquee-item">✦</span>
+    <span class="marquee-item">Kaiserin</span>
+    <span class="marquee-item">✦</span>
+    <span class="marquee-item">Lac Hong University</span>
+    <span class="marquee-item">✦</span>
+    <span class="marquee-item">Quoc Bao Construction</span>
+    <span class="marquee-item">✦</span>
+  </div>
+</div>
 
-<!-- 01 ABOUT -->
-<section class="section section--light" id="about">
-  <span class="section-num">01</span>
-  <div class="container">
-    <div class="reveal"><span class="section-label">About Me</span><h2 class="section-title">Who I Am</h2><p class="section-desc">A marketer who bridges data and creativity to deliver measurable business impact for enterprise clients.</p></div>
-    <div class="about__grid">
-      <div class="about__card card card--light reveal rv-d1 tilt-card"><div class="about__icon">📈</div><h3>Data-Driven Marketer</h3><p>Strong IT background combined with marketing creativity. Expertise in SEO, social media strategy, performance marketing, and marketing operations across Telco, F&B, EdTech, and Legal Services.</p></div>
-      <div class="about__card card card--light reveal rv-d2 tilt-card"><div class="about__icon">🎓</div><h3>Enthusiastic Learner</h3><p>10 professional certifications from Meta, IBM, Google. Skilled in SQL, Power BI, Google Ads, Meta Ads, and marketing automation. Lifelong learner in MarTech and data analytics.</p></div>
-      <div class="about__card card card--light reveal rv-d3 tilt-card"><div class="about__icon">🎯</div><h3>Creative Strategist</h3><p>Design campaigns balancing artistry with business impact. Every strategy backed by data, every creative tested for performance. From concept to execution — results that matter.</p></div>
+<!-- PROCESS (ABOUT) -->
+<section class="process" id="about">
+  <div class="section-tag">Sở Trường</div>
+  <h2 class="section-title reveal">Lợi thế<br><span class="accent">cạnh tranh</span></h2>
+
+  <div class="process-steps">
+    <div class="step reveal">
+      <div class="step-dot">📊</div>
+      <div class="step-name">Data-Driven</div>
+      <p class="step-desc">Thành thạo SQL, Power BI, Meta/Google Ads. Phân tích số liệu để đưa ra insight chính xác thay vì đoán mò.</p>
+    </div>
+    <div class="step reveal reveal-delay-1">
+      <div class="step-dot">🎯</div>
+      <div class="step-name">Strategic</div>
+      <p class="step-desc">Phát triển chiến lược dài hạn, mô hình phễu chuẩn xác, lên kế hoạch Content & Media bài bản.</p>
+    </div>
+    <div class="step reveal reveal-delay-2">
+      <div class="step-dot">🎓</div>
+      <div class="step-name">Life-long Learner</div>
+      <p class="step-desc">Luôn cập nhật xu hướng MarTech, AI, SEO và tối ưu hóa hệ thống vận hành.</p>
+    </div>
+    <div class="step reveal reveal-delay-3">
+      <div class="step-dot">💡</div>
+      <div class="step-name">Creative</div>
+      <p class="step-desc">Cân bằng giữa tư duy logic (IT) và nghệ thuật kể chuyện để tạo ra nội dung viral nhưng vẫn giữ chất Brand.</p>
     </div>
   </div>
 </section>
 
-<!-- 02 EXPERIENCE -->
-<section class="section" id="experience">
-  <span class="section-num">02</span>
-  <div class="container">
-    <div class="reveal"><span class="section-label">Career Path</span><h2 class="section-title">Work Experience</h2><p class="section-desc">Building expertise through impactful roles in marketing and digital strategy.</p></div>
-    <div class="exp__timeline">
-      <div class="exp__item reveal"><div class="exp__dot"></div><div class="exp__card card">
-        <div class="exp__head"><div><div class="exp__company">PMEDIA</div><div class="exp__role">Marketing Planner</div></div><span class="exp__date">08/2025 — 04/2026</span></div>
-        <div class="exp__body"><p>Full-service marketing agency. Clients: Viettel HCM, Kaiserin, F&B/EdTech leaders.</p><ul>
-          <li>Market audits & competitor benchmarking for multi-channel strategies</li>
-          <li>Social Hub frameworks for F&B + brand consistency plans for Viettel HCM</li>
-          <li>3H content framework & SEO Topic Clusters — 3,000+ reach surge for Kaiserin</li>
-          <li>Full-cycle Fanpage operations — Organic first-distribution, 100% KPI fulfillment</li>
-          <li>High-impact strategic proposals — 100% project milestone delivery</li>
-        </ul></div>
-        <div class="exp__tags"><span class="exp__tag">Social Media Strategy</span><span class="exp__tag">SEO</span><span class="exp__tag">Content Marketing</span><span class="exp__tag">Brand Strategy</span><span class="exp__tag">Analytics</span></div>
-      </div></div>
-      <div class="exp__item reveal"><div class="exp__dot"></div><div class="exp__card card">
-        <div class="exp__head"><div><div class="exp__company">Faculty of IT — Lac Hong University</div><div class="exp__role">Social Media Intern</div></div><span class="exp__date">06/2025 — 08/2025</span></div>
-        <div class="exp__body"><ul>
-          <li>Managed Faculty's official fanpage — content, admissions, student achievements</li>
-          <li>2025 enrollment recruitment campaigns — Q&A sessions, alumni success stories</li>
-          <li>Media coordinator for workshops — visual assets + short-form video</li>
-          <li>Refined posting schedules → measurable improvement in student inquiries</li>
-        </ul></div>
-        <div class="exp__tags"><span class="exp__tag">Social Media</span><span class="exp__tag">Content Creation</span><span class="exp__tag">Video Production</span></div>
-      </div></div>
-      <div class="exp__item reveal"><div class="exp__dot"></div><div class="exp__card card">
-        <div class="exp__head"><div><div class="exp__company">Quoc Bao Construction</div><div class="exp__role">Marketing Part-time</div></div><span class="exp__date">03/2024 — 09/2024</span></div>
-        <div class="exp__body"><p>Civil construction, luxury villa design, interior renovation.</p><ul>
-          <li>Monthly content calendars across Facebook & TikTok</li>
-          <li>Short-form video production — trending audio + visual aesthetics</li>
-          <li>Tracked Reach, Engagement, Video Views → optimized content strategy</li>
-        </ul></div>
-        <div class="exp__tags"><span class="exp__tag">Content Calendar</span><span class="exp__tag">Video Editing</span><span class="exp__tag">TikTok Marketing</span></div>
-      </div></div>
+<!-- SERVICES (EXPERIENCE) -->
+<section class="services" id="experience">
+  <div class="section-tag">Kinh Nghiệm</div>
+  <h2 class="section-title reveal">Hành trình<br><span class="accent">phát triển</span></h2>
+
+  <div class="services-grid">
+    <div class="service-card reveal" style="grid-column: span 3;">
+      <div class="service-num">01</div>
+      <div class="service-icon">💼</div>
+      <h3 class="service-name">PMEDIA — Marketing Planner</h3>
+      <p class="service-desc" style="color:var(--primary); font-weight:600; margin-bottom:12px;">08/2025 — 04/2026</p>
+      <p class="service-desc">Lập kế hoạch chiến lược đa kênh cho các client lớn như Viettel HCM, Kaiserin. Xây dựng Social Hub, cấu trúc nội dung 3H, SEO Topic Clusters mang lại kết quả bứt phá. Phụ trách vận hành Fanpage từ con số 0 đến đạt 100% KPI cam kết.</p>
+      <div style="margin-top:16px; display:flex; gap:8px; flex-wrap:wrap;">
+        <span class="hero-tag" style="margin:0; font-size:10px;">Strategic Planning</span>
+        <span class="hero-tag" style="margin:0; font-size:10px;">SEO</span>
+        <span class="hero-tag" style="margin:0; font-size:10px;">Social Media</span>
+      </div>
+    </div>
+    
+    <div class="service-card reveal reveal-delay-1" style="grid-column: span 1.5;">
+      <div class="service-num">02</div>
+      <div class="service-icon">🎓</div>
+      <h3 class="service-name">Lac Hong University</h3>
+      <p class="service-desc" style="color:var(--primary); font-weight:600; margin-bottom:12px;">Social Media Intern (06/2025 - 08/2025)</p>
+      <p class="service-desc">Quản trị Fanpage Khoa CNTT. Xây dựng chiến dịch tuyển sinh 2025, điều phối truyền thông, hình ảnh và short-form video tăng trưởng lượng tương tác tự nhiên.</p>
+    </div>
+
+    <div class="service-card reveal reveal-delay-2" style="grid-column: span 1.5;">
+      <div class="service-num">03</div>
+      <div class="service-icon">🏗️</div>
+      <h3 class="service-name">Quoc Bao Construction</h3>
+      <p class="service-desc" style="color:var(--primary); font-weight:600; margin-bottom:12px;">Marketing Part-time (03/2024 - 09/2024)</p>
+      <p class="service-desc">Lên Content Calendar cho Facebook & TikTok. Sản xuất video ngắn theo xu hướng, tối ưu hóa nội dung dựa trên số liệu Reach, Engagement.</p>
     </div>
   </div>
 </section>
 
-<!-- 03 PROJECTS -->
-<section class="section section--light" id="projects">
-  <span class="section-num">03</span>
-  <div class="container">
-    <div class="reveal"><span class="section-label">Case Studies</span><h2 class="section-title">Featured Projects</h2><p class="section-desc">Data-driven strategies delivering measurable growth across 6+ professional projects.</p></div>
+<div class="grad-divider"></div>
 
-    <!-- KAISERIN -->
-    <div class="project" id="project-kaiserin">
-      <div class="project__head reveal"><div class="project__icon">🍽️</div><div><h3>Kaiserin Restaurant</h3><span>Premium F&B — Social Commerce & Brand Positioning</span></div></div>
-      <div class="project__overview card card--light reveal"><h4>Challenge & Strategy</h4><p>Engineered a Social Commerce strategy transforming the Fanpage into a high-conversion Social Hub. Streamlined customer journey from "scrolling" to "booking" — driving offline foot traffic through digital engagement.</p></div>
-
-      <h4 class="reveal" style="font-family:var(--ff-head);color:var(--c-light-text);margin-top:var(--sp-md)">📈 Organic Social Growth</h4>
-      <div class="metrics">
-        <div class="metric card card--light reveal rv-d1"><div class="metric__val"><span class="metric__up">↑</span>587.1%</div><div class="metric__lbl">Unique Viewers</div></div>
-        <div class="metric card card--light reveal rv-d2"><div class="metric__val">310.7K</div><div class="metric__lbl">Total Reach</div></div>
-        <div class="metric card card--light reveal rv-d3"><div class="metric__val"><span class="metric__up">↑</span>120.1%</div><div class="metric__lbl">Reach Growth</div></div>
-        <div class="metric card card--light reveal rv-d4"><div class="metric__val">150.8K</div><div class="metric__lbl">Organic Views</div></div>
-        <div class="metric card card--light reveal rv-d1"><div class="metric__val"><span class="metric__up">↑</span>90%</div><div class="metric__lbl">Non-Follower</div></div>
-        <div class="metric card card--light reveal rv-d2"><div class="metric__val"><span class="metric__up">↑</span>30.3%</div><div class="metric__lbl">Page Visits/Mo</div></div>
-      </div>
-
-      <h4 class="reveal" style="font-family:var(--ff-head);color:var(--c-light-text);margin-top:var(--sp-md)">🛒 Commerce & Conversions</h4>
-      <div class="metrics">
-        <div class="metric card card--light reveal rv-d1"><div class="metric__val"><span class="metric__up">↑</span>416.7%</div><div class="metric__lbl">Link Clicks</div></div>
-        <div class="metric card card--light reveal rv-d2"><div class="metric__val">1,200+</div><div class="metric__lbl">Direct Bookings</div></div>
-        <div class="metric card card--light reveal rv-d3"><div class="metric__val">8.5%</div><div class="metric__lbl">Conversion Rate</div></div>
-        <div class="metric card card--light reveal rv-d4"><div class="metric__val"><span class="metric__up">↓</span>30%</div><div class="metric__lbl">CAC Reduction</div></div>
-        <div class="metric card card--light reveal rv-d1"><div class="metric__val">100%</div><div class="metric__lbl">KPI Fulfillment</div></div>
-      </div>
-
-      <div class="tabs reveal" id="kaiserinTabs">
-        <button class="tab-btn active" data-tab="k-all">All Content</button>
-        <button class="tab-btn" data-tab="k-social">📱 Social Post Designs</button>
-        <button class="tab-btn" data-tab="k-menu">🍲 Food & Menus</button>
-        <button class="tab-btn" data-tab="k-reports">📊 Performance Reports</button>
-      </div>
-
-      <div class="tab-panel active reveal" data-panel="k-all">
-        <div class="gallery-item" data-lightbox><img src="assets/projects/kaiserin/kaiserin-social-1.png" alt="Kaiserin Social Post 1" loading="lazy"/></div>
-        <div class="gallery-item" data-lightbox><img src="assets/projects/kaiserin/kaiserin-social-2.png" alt="Kaiserin Social Post 2" loading="lazy"/></div>
-        <div class="gallery-item" data-lightbox><img src="extracted/Kaiserin/PROJECT KAISERIN/Thiết kế chưa có tên (38).png" alt="Kaiserin Social Design" loading="lazy"/></div>
-        <div class="gallery-item" data-lightbox><img src="extracted/Kaiserin/PROJECT KAISERIN/Thiết kế chưa có tên (39).png" alt="Kaiserin Social Design" loading="lazy"/></div>
-        <div class="gallery-item" data-lightbox><img src="assets/projects/kaiserin/kaiserin-food-1.jpg" alt="Kaiserin Premium Food" loading="lazy"/></div>
-        <div class="gallery-item" data-lightbox><img src="extracted/Kaiserin/PROJECT KAISERIN/cơm chiên lá é.png" alt="Cơm Chiên Lá É" loading="lazy"/></div>
-        <div class="gallery-item" data-lightbox><img src="extracted/Kaiserin/PROJECT KAISERIN/Screenshot 2026-05-27 082649.png" alt="Performance Report" loading="lazy"/></div>
-        <div class="gallery-item" data-lightbox><img src="extracted/Kaiserin/PROJECT KAISERIN/Screenshot 2026-05-27 082720.png" alt="Audience Growth" loading="lazy"/></div>
-      </div>
-
-      <div class="tab-panel" data-panel="k-social">
-        <div class="gallery-item" data-lightbox><img src="assets/projects/kaiserin/kaiserin-social-1.png" alt="Kaiserin Social Post 1" loading="lazy"/></div>
-        <div class="gallery-item" data-lightbox><img src="assets/projects/kaiserin/kaiserin-social-2.png" alt="Kaiserin Social Post 2" loading="lazy"/></div>
-        <div class="gallery-item" data-lightbox><img src="assets/projects/kaiserin/kaiserin-social-3.png" alt="Kaiserin Social Post 3" loading="lazy"/></div>
-        <div class="gallery-item" data-lightbox><img src="assets/projects/kaiserin/kaiserin-social-4.png" alt="Kaiserin Social Post 4" loading="lazy"/></div>
-        <div class="gallery-item" data-lightbox><img src="assets/projects/kaiserin/kaiserin-social-5.png" alt="Kaiserin Social Post 5" loading="lazy"/></div>
-        <div class="gallery-item" data-lightbox><img src="extracted/Kaiserin/PROJECT KAISERIN/Thiết kế chưa có tên (38).png" alt="Social Post Design 1" loading="lazy"/></div>
-        <div class="gallery-item" data-lightbox><img src="extracted/Kaiserin/PROJECT KAISERIN/Thiết kế chưa có tên (39).png" alt="Social Post Design 2" loading="lazy"/></div>
-        <div class="gallery-item" data-lightbox><img src="extracted/Kaiserin/PROJECT KAISERIN/Thiết kế chưa có tên (40).png" alt="Social Post Design 3" loading="lazy"/></div>
-        <div class="gallery-item" data-lightbox><img src="extracted/Kaiserin/PROJECT KAISERIN/Thiết kế chưa có tên (41).png" alt="Social Post Design 4" loading="lazy"/></div>
-        <div class="gallery-item" data-lightbox><img src="extracted/Kaiserin/PROJECT KAISERIN/Thiết kế chưa có tên (42).png" alt="Social Post Design 5" loading="lazy"/></div>
-        <div class="gallery-item" data-lightbox><img src="extracted/Kaiserin/PROJECT KAISERIN/Thiết kế chưa có tên (43).png" alt="Social Post Design 6" loading="lazy"/></div>
-        <div class="gallery-item" data-lightbox><img src="extracted/Kaiserin/PROJECT KAISERIN/Thiết kế chưa có tên (44).png" alt="Social Post Design 7" loading="lazy"/></div>
-        <div class="gallery-item" data-lightbox><img src="extracted/Kaiserin/PROJECT KAISERIN/Ăn là dính nhìn là ghiền!.png" alt="Social Post Design 8" loading="lazy"/></div>
-        <div class="gallery-item" data-lightbox><img src="extracted/Kaiserin/PROJECT KAISERIN/đón tết (3).png" alt="Tết Campaign Poster" loading="lazy"/></div>
-      </div>
-
-      <div class="tab-panel" data-panel="k-menu">
-        <div class="gallery-item" data-lightbox><img src="assets/projects/kaiserin/kaiserin-brand.png" alt="Kaiserin Brand Logo" loading="lazy"/></div>
-        <div class="gallery-item" data-lightbox><img src="assets/projects/kaiserin/kaiserin-ticket.png" alt="Kaiserin Event Ticket" loading="lazy"/></div>
-        <div class="gallery-item" data-lightbox><img src="assets/projects/kaiserin/kaiserin-food-1.jpg" alt="Kaiserin Premium Food 1" loading="lazy"/></div>
-        <div class="gallery-item" data-lightbox><img src="assets/projects/kaiserin/kaiserin-food-2.jpg" alt="Kaiserin Premium Food 2" loading="lazy"/></div>
-        <div class="gallery-item" data-lightbox><img src="assets/projects/kaiserin/kaiserin-food-3.jpg" alt="Kaiserin Premium Food 3" loading="lazy"/></div>
-        <div class="gallery-item" data-lightbox><img src="extracted/Kaiserin/PROJECT KAISERIN/cơm chiên lá é.png" alt="Cơm Chiên Lá É" loading="lazy"/></div>
-        <div class="gallery-item" data-lightbox><img src="extracted/Kaiserin/PROJECT KAISERIN/ẢNH CÁ BỐNG MÚ 345KKG  KAISERIN - PMEDIA (19).png" alt="Cá Bống Mú Promotion 1" loading="lazy"/></div>
-        <div class="gallery-item" data-lightbox><img src="extracted/Kaiserin/PROJECT KAISERIN/ẢNH CÁ BỐNG MÚ 345KKG  KAISERIN - PMEDIA (20).png" alt="Cá Bống Mú Promotion 2" loading="lazy"/></div>
-        <div class="gallery-item" data-lightbox><img src="extracted/Kaiserin/PROJECT KAISERIN/z7595712506168_a246f61444e4f77ffccdb1c55c9a66da.jpg" alt="Dish Highlight 1" loading="lazy"/></div>
-        <div class="gallery-item" data-lightbox><img src="extracted/Kaiserin/PROJECT KAISERIN/z7595712508368_1d60302a8ca91aabc42f5aef90de0897.jpg" alt="Dish Highlight 2" loading="lazy"/></div>
-        <div class="gallery-item" data-lightbox><img src="extracted/Kaiserin/PROJECT KAISERIN/z7595712509778_8107f8e2597940e9896159007eb007d9.jpg" alt="Dish Highlight 3" loading="lazy"/></div>
-        <div class="gallery-item" data-lightbox><img src="extracted/Kaiserin/PROJECT KAISERIN/z7625898103148_e56f000ad68d0c58b2669373f2990856.jpg" alt="Dish Highlight 4" loading="lazy"/></div>
-        <div class="gallery-item" data-lightbox><img src="extracted/Kaiserin/PROJECT KAISERIN/z7642528342934_e5f83586b6f94c8fb7311911f2a6a6e7.jpg" alt="Dish Highlight 5" loading="lazy"/></div>
-        <div class="gallery-item" data-lightbox><img src="extracted/Kaiserin/PROJECT KAISERIN/z7642528363463_95f83f1508e41b1365a2fe16977024c4.jpg" alt="Dish Highlight 6" loading="lazy"/></div>
-        <div class="gallery-item" data-lightbox><img src="extracted/Kaiserin/PROJECT KAISERIN/z7642528411265_142dd3d8df5695f9363222b29dd7d5b0.jpg" alt="Dish Highlight 7" loading="lazy"/></div>
-      </div>
-
-      <div class="tab-panel" data-panel="k-reports">
-        <div class="gallery-item" data-lightbox><img src="extracted/Kaiserin/PROJECT KAISERIN/Screenshot 2026-05-27 082649.png" alt="Performance Report 1" loading="lazy"/></div>
-        <div class="gallery-item" data-lightbox><img src="extracted/Kaiserin/PROJECT KAISERIN/Screenshot 2026-05-27 082720.png" alt="Performance Report 2" loading="lazy"/></div>
-        <div class="gallery-item" data-lightbox><img src="extracted/Kaiserin/PROJECT KAISERIN/Screenshot 2026-03-20 094619.png" alt="Analytics Overview 1" loading="lazy"/></div>
-        <div class="gallery-item" data-lightbox><img src="extracted/Kaiserin/PROJECT KAISERIN/Screenshot 2026-03-20 094638.png" alt="Analytics Overview 2" loading="lazy"/></div>
-        <div class="gallery-item" data-lightbox><img src="extracted/Kaiserin/PROJECT KAISERIN/Screenshot 2026-04-04 131152.png" alt="Engagement Chart" loading="lazy"/></div>
-        <div class="gallery-item" data-lightbox><img src="extracted/Kaiserin/PROJECT KAISERIN/Screenshot 2026-04-06 194847.png" alt="Reach Analytics" loading="lazy"/></div>
-      </div>
-    </div>
-
-    <div class="project__divider"></div>
-
-    <!-- VIETTEL -->
-    <div class="project" id="project-viettel">
-      <div class="project__head reveal"><div class="project__icon" style="background:var(--c-accent);color:#fff;font-weight:700;font-size:.7rem">VT</div><div><h3>Viettel Hồ Chí Minh</h3><span>Telecommunication — Multi-Channel Content Strategy</span></div></div>
-      <div class="project__overview card card--light reveal"><h4>My Role & Contribution</h4><p>Strategic Planner for Viettel HCM — contributed to multiple integrated campaigns strengthening local brand presence. Multi-channel communication planning, entertainment marketing, and data-driven optimization across 6 content pillars.</p></div>
-
-      <div class="tabs reveal" id="viettelTabs">
-        <button class="tab-btn active" data-tab="vt-all">All Content</button>
-        <button class="tab-btn" data-tab="vt-tv360">🏆 TV360 & Sports</button>
-        <button class="tab-btn" data-tab="vt-tet">🧧 Tết Campaigns</button>
-        <button class="tab-btn" data-tab="vt-products">📱 5G & Products</button>
-        <button class="tab-btn" data-tab="vt-events">🎪 Events</button>
-        <button class="tab-btn" data-tab="vt-entertainment">🎬 Entertainment</button>
-        <button class="tab-btn" data-tab="vt-promos">🎁 Promotions</button>
-      </div>
-
-      <div class="tab-panel active" data-panel="vt-all">
-        <div class="gallery-item" data-lightbox><img src="assets/projects/viettel/tv360-sports/1.png" alt="TV360 Sports" loading="lazy"/></div>
-        <div class="gallery-item" data-lightbox><img src="assets/projects/viettel/tet-campaign/1.png" alt="Tết Campaign" loading="lazy"/></div>
-        <div class="gallery-item" data-lightbox><img src="assets/projects/viettel/products-5g/1.png" alt="5G Products" loading="lazy"/></div>
-        <div class="gallery-item" data-lightbox><img src="assets/projects/viettel/events/1.png" alt="Events" loading="lazy"/></div>
-        <div class="gallery-item" data-lightbox><img src="assets/projects/viettel/entertainment/1.png" alt="Entertainment" loading="lazy"/></div>
-        <div class="gallery-item" data-lightbox><img src="assets/projects/viettel/promotions/1.png" alt="Promotions" loading="lazy"/></div>
-      </div>
-      <div class="tab-panel" data-panel="vt-tv360">
-        <div class="gallery-item" data-lightbox><img src="assets/projects/viettel/tv360-sports/1.png" alt="AFC U23" loading="lazy"/></div>
-        <div class="gallery-item" data-lightbox><img src="assets/projects/viettel/tv360-sports/2.png" alt="Football" loading="lazy"/></div>
-        <div class="gallery-item" data-lightbox><img src="assets/projects/viettel/tv360-sports/3.png" alt="Live Stream" loading="lazy"/></div>
-        <div class="gallery-item" data-lightbox><img src="assets/projects/viettel/tv360-sports/4.png" alt="Highlights" loading="lazy"/></div>
-      </div>
-      <div class="tab-panel" data-panel="vt-tet">
-        <div class="gallery-item" data-lightbox><img src="assets/projects/viettel/tet-campaign/1.png" alt="Tết 5G" loading="lazy"/></div>
-        <div class="gallery-item" data-lightbox><img src="assets/projects/viettel/tet-campaign/2.png" alt="Tết Promo" loading="lazy"/></div>
-        <div class="gallery-item" data-lightbox><img src="assets/projects/viettel/tet-campaign/3.png" alt="Tết Content" loading="lazy"/></div>
-        <div class="gallery-item" data-lightbox><img src="assets/projects/viettel/tet-campaign/4.png" alt="Tết Package" loading="lazy"/></div>
-      </div>
-      <div class="tab-panel" data-panel="vt-products">
-        <div class="gallery-item" data-lightbox><img src="assets/projects/viettel/products-5g/1.png" alt="SD125T" loading="lazy"/></div>
-        <div class="gallery-item" data-lightbox><img src="assets/projects/viettel/products-5g/2.png" alt="5G Family" loading="lazy"/></div>
-        <div class="gallery-item" data-lightbox><img src="assets/projects/viettel/products-5g/3.png" alt="Giga Internet" loading="lazy"/></div>
-        <div class="gallery-item" data-lightbox><img src="assets/projects/viettel/products-5g/4.png" alt="Camera" loading="lazy"/></div>
-      </div>
-      <div class="tab-panel" data-panel="vt-events">
-        <div class="gallery-item" data-lightbox><img src="assets/projects/viettel/events/1.png" alt="Nguyen Hue" loading="lazy"/></div>
-        <div class="gallery-item" data-lightbox><img src="assets/projects/viettel/events/3.png" alt="Giga Booth" loading="lazy"/></div>
-        <div class="gallery-item" data-lightbox><img src="assets/projects/viettel/events/4.png" alt="Activation" loading="lazy"/></div>
-        <div class="gallery-item" data-lightbox><img src="assets/projects/viettel/events/5.png" alt="XGSPON" loading="lazy"/></div>
-        <div class="gallery-item" data-lightbox><img src="assets/projects/viettel/events/6.png" alt="Field Sales" loading="lazy"/></div>
-      </div>
-      <div class="tab-panel" data-panel="vt-entertainment">
-        <div class="gallery-item" data-lightbox><img src="assets/projects/viettel/entertainment/1.png" alt="Movies" loading="lazy"/></div>
-        <div class="gallery-item" data-lightbox><img src="assets/projects/viettel/entertainment/2.png" alt="Phim Tết" loading="lazy"/></div>
-        <div class="gallery-item" data-lightbox><img src="assets/projects/viettel/entertainment/3.png" alt="TV360" loading="lazy"/></div>
-        <div class="gallery-item" data-lightbox><img src="assets/projects/viettel/entertainment/4.png" alt="Shows" loading="lazy"/></div>
-      </div>
-      <div class="tab-panel" data-panel="vt-promos">
-        <div class="gallery-item" data-lightbox><img src="assets/projects/viettel/promotions/1.png" alt="Giga Launch" loading="lazy"/></div>
-        <div class="gallery-item" data-lightbox><img src="assets/projects/viettel/promotions/2.png" alt="XGSPON" loading="lazy"/></div>
-        <div class="gallery-item" data-lightbox><img src="assets/projects/viettel/promotions/5.png" alt="Activation" loading="lazy"/></div>
-        <div class="gallery-item" data-lightbox><img src="assets/projects/viettel/promotions/6.png" alt="Brand" loading="lazy"/></div>
-      </div>
+<!-- WORK / PORTFOLIO -->
+<section class="work" id="work">
+  <div class="work-header">
+    <div>
+      <div class="section-tag">Case Studies</div>
+      <h2 class="section-title reveal">Dự Án <span class="accent">Nổi Bật</span></h2>
     </div>
   </div>
-</section>
 
-<!-- 04 SKILLS -->
-<section class="section section--light" id="skills">
-  <span class="section-num">04</span>
-  <div class="container">
-    <div class="reveal"><span class="section-label">Expertise</span><h2 class="section-title">Skills & Tools</h2><p class="section-desc">A versatile toolkit — marketing strategy, creative execution, and data analytics.</p></div>
-    <div class="skills__grid">
-      <div class="reveal">
-        <h3 style="font-family:var(--ff-head);color:var(--c-light-text);margin-bottom:var(--sp-md);font-weight:700">Core Skills</h3>
-        <div class="skills-list">
-          <div class="skill-tag"><i class="ph-duotone ph-check-circle"></i> Social Media & Strategy</div>
-          <div class="skill-tag"><i class="ph-duotone ph-check-circle"></i> Content & Branding</div>
-          <div class="skill-tag"><i class="ph-duotone ph-check-circle"></i> Growth Marketing</div>
-          <div class="skill-tag"><i class="ph-duotone ph-check-circle"></i> Analytics & Data</div>
-          <div class="skill-tag"><i class="ph-duotone ph-check-circle"></i> Marketing Strategy</div>
-          <div class="skill-tag"><i class="ph-duotone ph-check-circle"></i> Brand Management</div>
-          <div class="skill-tag"><i class="ph-duotone ph-check-circle"></i> Creative Campaign</div>
+  <div class="work-grid">
+    <div class="work-item reveal">
+      <div class="work-thumb">
+        <div class="work-shape ws-1"></div>
+        <div class="work-shape ws-2"></div>
+        <!-- Animated chart inside -->
+        <svg style="position:absolute;top:40px;left:30px;right:30px;width:calc(100% - 60px);height:180px;opacity:0.3" viewBox="0 0 280 120">
+          <defs>
+            <linearGradient id="bg1" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" style="stop-color:#0C342C;stop-opacity:1"/>
+              <stop offset="100%" style="stop-color:#0C342C;stop-opacity:0"/>
+            </linearGradient>
+          </defs>
+          <rect x="0" y="60" width="30" height="60" rx="4" fill="#0C342C"/>
+          <rect x="40" y="35" width="30" height="85" rx="4" fill="#0C342C"/>
+          <rect x="80" y="20" width="30" height="100" rx="4" fill="#0C342C"/>
+          <rect x="120" y="50" width="30" height="70" rx="4" fill="#0C342C"/>
+          <rect x="160" y="10" width="30" height="110" rx="4" fill="#0C342C"/>
+          <rect x="200" y="30" width="30" height="90" rx="4" fill="#0C342C"/>
+          <rect x="240" y="5" width="30" height="115" rx="4" fill="#0C342C"/>
+        </svg>
+        <div class="work-info">
+          <span class="work-tag">Social Commerce</span>
+          <div class="work-title">Kaiserin Restaurant<br>Chuyển đổi số F&B</div>
+          <p style="color:var(--darkest); margin-top:16px; font-weight:500;">Tăng trưởng 587% Unique Viewers. Đạt 150.8K Organic Views và tăng 30.3% tỷ lệ ghé thăm Fanpage/tháng. Xây dựng phễu kéo Traffic offline.</p>
         </div>
       </div>
-      <div class="reveal rv-d2">
-        <h3 style="font-family:var(--ff-head);color:var(--c-light-text);margin-bottom:var(--sp-md);font-weight:700">Tools I Use</h3>
-        <div class="tools__grid">
-          <div class="tool"><div class="tool__icon"><i class="ph-duotone ph-meta-logo"></i></div><div class="tool__name">Meta Ads</div></div>
-          <div class="tool"><div class="tool__icon"><i class="ph-duotone ph-magnifying-glass"></i></div><div class="tool__name">RankMath</div></div>
-          <div class="tool"><div class="tool__icon"><i class="ph-duotone ph-chart-line-up"></i></div><div class="tool__name">Metricool</div></div>
-          <div class="tool"><div class="tool__icon"><i class="ph-duotone ph-robot"></i></div><div class="tool__name">ChatGPT</div></div>
-          <div class="tool"><div class="tool__icon"><i class="ph-duotone ph-palette"></i></div><div class="tool__name">Canva</div></div>
-          <div class="tool"><div class="tool__icon"><i class="ph-duotone ph-scissors"></i></div><div class="tool__name">CapCut</div></div>
-          <div class="tool"><div class="tool__icon"><i class="ph-duotone ph-file-search"></i></div><div class="tool__name">Yoast SEO</div></div>
-          <div class="tool"><div class="tool__icon"><i class="ph-duotone ph-trend-up"></i></div><div class="tool__name">G. Trends</div></div>
-          <div class="tool"><div class="tool__icon"><i class="ph-duotone ph-google-logo"></i></div><div class="tool__name">GA4</div></div>
-          <div class="tool"><div class="tool__icon"><i class="ph-duotone ph-kanban"></i></div><div class="tool__name">Trello</div></div>
-          <div class="tool"><div class="tool__icon"><i class="ph-duotone ph-notebook"></i></div><div class="tool__name">Notion</div></div>
-          <div class="tool"><div class="tool__icon"><i class="ph-duotone ph-device-mobile"></i></div><div class="tool__name">Meta Suite</div></div>
-          <div class="tool"><div class="tool__icon"><i class="ph-duotone ph-fire"></i></div><div class="tool__name">BuzzSumo</div></div>
-          <div class="tool"><div class="tool__icon"><i class="ph-duotone ph-presentation-chart"></i></div><div class="tool__name">Data Studio</div></div>
-          <div class="tool"><div class="tool__icon"><i class="ph-duotone ph-chart-bar"></i></div><div class="tool__name">Power BI</div></div>
-          <div class="tool"><div class="tool__icon"><i class="ph-duotone ph-queue"></i></div><div class="tool__name">Buffer</div></div>
+    </div>
+
+    <div class="work-item reveal reveal-delay-1">
+      <div class="work-thumb">
+        <svg style="position:absolute;top:20px;right:20px;opacity:0.25" width="140" height="140" viewBox="0 0 140 140">
+          <circle cx="70" cy="70" r="60" fill="none" stroke="#0C342C" stroke-width="2" stroke-dasharray="8 4"/>
+          <circle cx="70" cy="70" r="40" fill="#0C342C" opacity="0.3"/>
+          <circle cx="70" cy="70" r="20" fill="#0C342C" opacity="0.5"/>
+        </svg>
+        <div class="work-info">
+          <span class="work-tag">Brand Consistency</span>
+          <div class="work-title">Viettel HCM<br>Đồng bộ hoá Brand</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="work-item reveal reveal-delay-2">
+      <div class="work-thumb">
+        <svg style="position:absolute;top:15px;left:20px;opacity:0.2" width="120" height="100" viewBox="0 0 120 100">
+          <polyline points="0,80 20,55 40,65 60,30 80,40 100,15 120,5"
+            fill="none" stroke="#FFFDEE" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+          <polyline points="0,80 20,55 40,65 60,30 80,40 100,15 120,5 120,100 0,100"
+            fill="#FFFDEE" opacity="0.15"/>
+          <circle cx="120" cy="5" r="5" fill="#FFFDEE"/>
+        </svg>
+        <div class="work-info">
+          <span class="work-tag" style="background:rgba(255,253,238,0.15);color:#E3EF26">Digital Campaign</span>
+          <div class="work-title">LHU IT Faculty<br>Tuyển sinh 2025</div>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- 05 CERTIFICATIONS -->
-<section class="section" id="certifications">
-  <span class="section-num">05</span>
-  <div class="container">
-    <div class="reveal"><span class="section-label">Education</span><h2 class="section-title">Certifications</h2><p class="section-desc">10 professional certifications from Meta, IBM, and Google — continuously upskilling.</p></div>
-    <div class="certs__grid">
-      <div class="cert card reveal rv-d1" data-lightbox><div class="cert__img"><img src="assets/certs/cert-1.png" alt="Certificate"/></div><div class="cert__info"><h4>Introduction to Mobile App Development</h4><span>Coursera — Meta</span></div></div>
-      <div class="cert card reveal rv-d2" data-lightbox><div class="cert__img"><img src="assets/certs/cert-2.png" alt="Certificate"/></div><div class="cert__info"><h4>Developing Front-End Apps with React</h4><span>Coursera — IBM</span></div></div>
-      <div class="cert card reveal rv-d3" data-lightbox><div class="cert__img"><img src="assets/certs/cert-3.png" alt="Certificate"/></div><div class="cert__info"><h4>Designing UI & UX Experiences</h4><span>Coursera — IBM</span></div></div>
-      <div class="cert card reveal rv-d1" data-lightbox><div class="cert__img"><img src="assets/certs/cert-4.png" alt="Certificate"/></div><div class="cert__info"><h4>Get Started with iOS Development</h4><span>Coursera — Meta</span></div></div>
-      <div class="cert card reveal rv-d2" data-lightbox><div class="cert__img"><img src="assets/certs/cert-5.png" alt="Certificate"/></div><div class="cert__info"><h4>Flutter & Dart: Mobile Apps</h4><span>Coursera — Google</span></div></div>
-      <div class="cert card reveal rv-d3" data-lightbox><div class="cert__img"><img src="assets/certs/cert-6.png" alt="Certificate"/></div><div class="cert__info"><h4>Mobile App Databases & Publishing</h4><span>Coursera — Meta</span></div></div>
-      <div class="cert card reveal rv-d1" data-lightbox><div class="cert__img"><img src="assets/certs/cert-7.png" alt="Certificate"/></div><div class="cert__info"><h4>Getting Started with Git & GitHub</h4><span>Coursera — IBM</span></div></div>
-      <div class="cert card reveal rv-d2" data-lightbox><div class="cert__img"><img src="assets/certs/cert-8.png" alt="Certificate"/></div><div class="cert__info"><h4>Introduction to Software Engineering</h4><span>Coursera — IBM</span></div></div>
-      <div class="cert card reveal rv-d3" data-lightbox><div class="cert__img"><img src="assets/certs/cert-9.png" alt="Certificate"/></div><div class="cert__info"><h4>Android App Development</h4><span>Coursera — Meta</span></div></div>
-      <div class="cert card reveal rv-d1" data-lightbox><div class="cert__img"><img src="assets/certs/cert-10.png" alt="Certificate"/></div><div class="cert__info"><h4>HTML, CSS & JavaScript</h4><span>Coursera — IBM</span></div></div>
-    </div>
-  </div>
-</section>
-
-<!-- 06 CONTACT -->
-<section class="section section--light" id="contact">
-  <span class="section-num">06</span>
-  <div class="container">
-    <div class="reveal"><span class="section-label">Get In Touch</span><h2 class="section-title">Let's Work Together</h2><p class="section-desc">Ready to drive growth for your brand? Let's connect.</p></div>
-    <div class="contact__grid">
-      <div class="contact__info reveal">
-        <a href="tel:0348561030" class="contact__item card card--light"><div class="contact__item-icon">📞</div><div><div class="contact__item-label">Phone</div><div class="contact__item-value">0348 561 030</div></div></a>
-        <a href="mailto:tranduchuy2k4work@gmail.com" class="contact__item card card--light"><div class="contact__item-icon">✉️</div><div><div class="contact__item-label">Email</div><div class="contact__item-value">tranduchuy2k4work@gmail.com</div></div></a>
-        <div class="contact__item card card--light"><div class="contact__item-icon">📍</div><div><div class="contact__item-label">Location</div><div class="contact__item-value">Ho Chi Minh City, Vietnam</div></div></div>
-        <div class="contact__socials">
-          <a href="#" class="contact__social" title="LinkedIn">in</a>
-          <a href="#" class="contact__social" title="Facebook">f</a>
-          <a href="#" class="contact__social" title="TikTok">♪</a>
-          <a href="#" class="contact__social" title="Instagram">📷</a>
-        </div>
-      </div>
-      <form class="form reveal rv-d2" id="contactForm">
-        <div><label>Your Name</label><input type="text" id="name" placeholder="John Doe" required/></div>
-        <div><label>Your Email</label><input type="email" id="email" placeholder="john@company.com" required/></div>
-        <div><label>Subject</label><input type="text" id="subject" placeholder="Project Inquiry"/></div>
-        <div><label>Message</label><textarea id="message" placeholder="Tell me about your project..." required></textarea></div>
-        <button type="submit" class="btn btn--primary magnetic-btn">Send Message <span class="btn__arrow">→</span></button>
-      </form>
-    </div>
+<!-- CTA -->
+<section class="cta-section" id="contact">
+  <h2 class="cta-title reveal">
+    <span>Sẵn sàng bứt phá<br>cùng dữ liệu?</span>
+  </h2>
+  <p class="cta-sub reveal reveal-delay-1">Hãy để tôi giúp bạn xây dựng một hệ thống Marketing bài bản, vận hành dựa trên số liệu và chiến lược sáng tạo xuất sắc.</p>
+  <div class="cta-buttons reveal reveal-delay-2">
+    <a href="mailto:tranduchuy@gmail.com" class="btn-primary">Gửi Email Cho Tôi →</a>
+    <a href="#" class="btn-ghost" style="color:var(--g2-top)">
+      <div class="arrow" style="border-color:rgba(226,251,206,0.3)">📄</div>
+      Tải CV (PDF)
+    </a>
   </div>
 </section>
 
 <!-- FOOTER -->
-<footer class="footer"><div class="container footer__inner"><p class="footer__copy">© 2026 Tran Duc Huy. All rights reserved.</p><a href="#hero" class="footer__top">Back to Top ↑</a></div></footer>
+<footer>
+  <div class="footer-logo">Huy Tran.</div>
+  <div class="footer-links">
+    <a href="https://linkedin.com">LinkedIn</a>
+    <a href="https://facebook.com">Facebook</a>
+    <a href="https://github.com">Github</a>
+  </div>
+  <div class="footer-copy">© 2026 Trần Đức Huy. Portfolio.</div>
+</footer>
 
-<!-- LIGHTBOX -->
-<div class="lightbox" id="lightbox"><button class="lightbox__close">✕</button><img class="lightbox__img" id="lightboxImg" src="" alt="Preview"/></div>
-<div class="cursor-glow" id="cursorGlow"></div>
-<div class="noise"></div>
-<div class="loader" id="loader"><div class="loader__mark">H</div></div>
-
-<script src="script.js"></script>
+<script src="script.js?v=2"></script>
 </body>
 </html>
