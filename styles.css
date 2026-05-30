@@ -6,35 +6,35 @@
 
 :root {
   /* ——— COLOR PALETTE ——— */
-  --c-bg: #0a1770; /* Brand Identity gradient base */
-  --c-bg-deep: #050a3a;
-  --c-bg-alt: #1a3bd6; /* Campaign gradient base */
+  --c-bg: #0A192F; /* Xanh navy */
+  --c-bg-deep: #020C1B; /* Xanh navy đậm */
+  --c-bg-alt: #112240; /* Xanh navy nhạt */
   --c-surface: rgba(255, 255, 255, 0.08);
-  --c-surface-solid: #12259e;
+  --c-surface-solid: #112240;
   --c-surface-hover: rgba(255, 255, 255, 0.15);
-  --c-accent: #2234F5;
-  --c-accent-bright: #4158FF;
-  --c-accent-light: #6B7CFF;
-  --c-accent-glow: rgba(34, 52, 245, 0.4);
+  --c-accent: #00E5FF; /* Xanh ngọc */
+  --c-accent-bright: #33FFE8; /* Xanh ngọc sáng */
+  --c-accent-light: #89CFF0; /* Xanh baby blue */
+  --c-accent-glow: rgba(0, 229, 255, 0.4);
   --c-accent-subtle: rgba(255, 255, 255, 0.1);
-  --c-text: #ffffff;
+  --c-text: #ffffff; /* Trắng */
   --c-text-muted: rgba(255, 255, 255, 0.75);
   --c-text-dim: rgba(255, 255, 255, 0.5);
   --c-white: #FFFFFF;
   --c-border: rgba(255, 255, 255, 0.15);
   --c-border-hover: rgba(255, 255, 255, 0.3);
   --c-success: #10B981;
-  --c-gradient: linear-gradient(135deg, #2234F5 0%, #6B7CFF 50%, #2234F5 100%);
-  --c-gradient-text: linear-gradient(135deg, #FFFFFF 0%, #6B7CFF 100%);
-  --c-glass: rgba(15, 23, 60, 0.4);
-  --c-glass-border: rgba(100, 120, 200, 0.15);
+  --c-gradient: linear-gradient(135deg, #00E5FF 0%, #89CFF0 50%, #00E5FF 100%);
+  --c-gradient-text: linear-gradient(135deg, #FFFFFF 0%, #89CFF0 100%);
+  --c-glass: rgba(10, 25, 47, 0.4); /* Glass xanh navy */
+  --c-glass-border: rgba(137, 207, 240, 0.15); /* Border baby blue nhạt */
 
   /* ——— LIGHT SECTION COLORS ——— */
-  --c-light-bg: #f0f2ff;
+  --c-light-bg: #E6F7FF; /* Xanh baby blue rất nhạt */
   --c-light-surface: #ffffff;
-  --c-light-text: #1a1f36;
-  --c-light-muted: #4a4f6a;
-  --c-light-border: rgba(34, 52, 245, 0.08);
+  --c-light-text: #0A192F; /* Chữ xanh navy */
+  --c-light-muted: #2E4C6D;
+  --c-light-border: rgba(0, 229, 255, 0.15);
 
   /* ——— TYPOGRAPHY ——— */
   --ff-body: 'Inter', -apple-system, sans-serif;
