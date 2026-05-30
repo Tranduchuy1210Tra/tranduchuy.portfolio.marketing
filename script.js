@@ -165,11 +165,11 @@ window.addEventListener('scroll', () => {
   const nav = document.querySelector('nav');
   if(nav) {
     if (window.scrollY > 80) {
-      nav.style.background = 'rgba(6,35,29,0.95)';
+      nav.style.background = 'linear-gradient(180deg, rgba(227, 239, 38, 0.98) 0%, rgba(7, 102, 83, 0.98) 100%)';
       nav.style.backdropFilter = 'blur(20px)';
     } else {
-      nav.style.background = 'linear-gradient(180deg, rgba(6,35,29,0.95) 0%, transparent 100%)';
-      nav.style.backdropFilter = 'blur(2px)';
+      nav.style.background = 'linear-gradient(180deg, rgba(227, 239, 38, 0.95) 0%, rgba(7, 102, 83, 0.95) 100%)';
+      nav.style.backdropFilter = 'blur(10px)';
     }
   }
 });
