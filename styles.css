@@ -5,29 +5,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,700;1,700&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@500&display=swap');
 
 :root {
-  /* ——— COLOR PALETTE (GREEN THEME) ——— */
-  --c-bg: #06231D; /* Nền xanh rêu rất đậm */
-  --c-bg-deep: #020F0C; 
-  --c-bg-alt: #0C342C; /* Xanh ngọc đậm */
-  --c-surface: rgba(255, 255, 255, 0.05);
-  --c-surface-solid: #0C342C;
-  --c-surface-hover: rgba(255, 255, 255, 0.1);
-  --c-accent: #E3EF26; /* Vàng chanh sáng */
-  --c-accent-bright: #E2FBCE; /* Vàng nhạt */
-  --c-accent-light: #076653; /* Xanh ngọc lục bảo */
-  --c-accent-glow: rgba(227, 239, 38, 0.3);
-  --c-accent-subtle: rgba(227, 239, 38, 0.1);
-  --c-text: #FFFDEE; /* Trắng ngà vàng */
-  --c-text-muted: rgba(255, 253, 238, 0.7);
-  --c-text-dim: rgba(255, 253, 238, 0.4);
+  /* ——— COLOR PALETTE (LIGHT GREEN/YELLOW THEME) ——— */
+  --c-bg: #FFFDEE; /* Trắng ngà vàng */
+  --c-bg-deep: #E2FBCE; /* Xanh lá nhạt */
+  --c-bg-alt: #E3EF26; /* Vàng chanh sáng */
+  --c-surface: rgba(255, 255, 255, 0.6);
+  --c-surface-solid: #FFFFFF;
+  --c-surface-hover: rgba(255, 255, 255, 0.9);
+  --c-accent: #076653; /* Xanh ngọc đậm (Dùng làm điểm nhấn trên nền sáng) */
+  --c-accent-bright: #06231D; /* Xanh rêu rất đậm */
+  --c-accent-light: #E3EF26; /* Vàng chanh sáng */
+  --c-accent-glow: rgba(7, 102, 83, 0.2);
+  --c-accent-subtle: rgba(7, 102, 83, 0.08);
+  --c-text: #06231D; /* Chữ tối màu */
+  --c-text-muted: rgba(6, 35, 29, 0.7);
+  --c-text-dim: rgba(6, 35, 29, 0.4);
   --c-white: #FFFFFF;
-  --c-border: rgba(255, 255, 255, 0.1);
-  --c-border-hover: rgba(227, 239, 38, 0.3);
-  --c-success: #10B981;
-  --c-gradient: linear-gradient(135deg, #076653 0%, #E3EF26 100%);
-  --c-gradient-text: linear-gradient(135deg, #FFFDEE 0%, #E3EF26 100%);
-  --c-glass: rgba(12, 52, 44, 0.4); /* Glass xanh lá đậm */
-  --c-glass-border: rgba(227, 239, 38, 0.15); /* Border vàng nhạt */
+  --c-border: rgba(7, 102, 83, 0.15);
+  --c-border-hover: rgba(7, 102, 83, 0.3);
+  --c-success: #076653;
+  --c-gradient: linear-gradient(135deg, #FFFDEE 0%, #E2FBCE 50%, #E3EF26 100%);
+  --c-gradient-text: linear-gradient(135deg, #076653 0%, #06231D 100%);
+  --c-glass: rgba(255, 255, 255, 0.65); /* Glass nền sáng */
+  --c-glass-border: rgba(255, 255, 255, 0.4);
 
   /* ——— LIGHT SECTION COLORS ——— */
   --c-light-bg: #F4F9F1;
@@ -88,7 +88,8 @@ body {
   font-family: var(--ff-body);
   font-size: var(--fs-body);
   color: var(--c-text);
-  background: var(--c-bg);
+  background: var(--c-gradient);
+  background-attachment: fixed;
   line-height: 1.7;
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
