@@ -23,8 +23,8 @@ html { scroll-behavior: smooth; }
 
 body {
   font-family: 'Be Vietnam Pro', sans-serif;
-  background: #FFFDEE; /* Changed from var(--darkest) to match user request */
-  color: var(--text-dark); /* Changed for contrast */
+  background: var(--darkest);
+  color: var(--text-light);
   overflow-x: hidden;
   cursor: none;
 }
